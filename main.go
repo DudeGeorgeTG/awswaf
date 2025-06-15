@@ -42,7 +42,7 @@ func solveHuggingFace() {
 	}
 	idx += 13
 	tail := html[idx:]
-	host := tail[:strings.Index(tail, "/challenge.js")]
+	host := tail[:strings.Index(tail, "/challenge.js")] 
 	
 	waf, err := aws.NewAwsWaf(
 		host,
